@@ -125,7 +125,7 @@ const RandomUserDataProvider = ({cache, children}: Props) => {
         if (imageList.length !== 25) {
             setImages();
         } else {
-            setCachedData('ImageList'. imageList);
+            setCachedData('ImageList', imageList);
         }
     }, [imageList]);
 
