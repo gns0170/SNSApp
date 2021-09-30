@@ -5,7 +5,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import { UserContext } from '~/Context/User';
+import { UserContext } from '~/Contexts/User';
 import SearchBar from '~/Components/SearchBar';
 import Loading from '~/Components/Loading';
 
