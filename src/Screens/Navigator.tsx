@@ -97,7 +97,10 @@ const ProfileTab = () => {
 const MainTabs = () => {
     return (
         <BottomTab.Navigator
-            tabBarOptions={{showLabel: false}}>
+            screenOptions={{
+                tabBarShowLabel: false,
+            }}
+           >
                 <BottomTab.Screen
                     name="MyFeed"
                     component={MyFeedTab}
@@ -181,8 +184,10 @@ const MainTabs = () => {
 const MainNavigator = () => {
     return (
         <Drawer.Navigator
-        drawerPosition="right"
-        drawerType="slide"
+        screenOptions={{
+            drawerPosition: "right",
+            drawerType: "slide",
+        }}
         drawerContent={(props) => <CustomDrawer props={props} />}>
             <Drawer.Screen name="MainTabs" component={MainTabs} />
         </Drawer.Navigator>
