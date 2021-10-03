@@ -52,7 +52,7 @@ const RandomUserDataProvider = ({cache, children}: Props) => {
         }
         try {
             const response = await fetch(
-                'https://raw.gihubusercontent.com/dev-yakuza/users/master/api.json',
+                'https://raw.githubusercontent.com/dev-yakuza/users/master/api.json',
             );
             const data = await response.json();
             setUserList(data);
@@ -73,7 +73,7 @@ const RandomUserDataProvider = ({cache, children}: Props) => {
         
         try {
             const response = await fetch(
-                'https://opinionated-quotes-api.gigalixirapp.com/v1/quotes?and=t&n=25',
+                'https://opinionated-quotes-api.gigalixirapp.com/v1/quotes?rand=t&n=25',
             );
             const data = await response.json();
             let text = [];
@@ -106,7 +106,7 @@ const RandomUserDataProvider = ({cache, children}: Props) => {
                 const response = await fetch('https://source.unsplash.com/random/');
                 const data = response.url;
                 if (imageList.indexOf(data) >= 0) {
-                    setImages;
+                    setImages();
                     return;
                 }
                 setImageList([...imageList, data]);
