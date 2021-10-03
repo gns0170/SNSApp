@@ -3,7 +3,6 @@ import Styled from 'styled-components/native';
 import {
     DrawerContentScrollView,
     DrawerContentComponentProps,
-    DrawerContentOptions,
 } from '@react-navigation/drawer';
 
 import { UserContext } from '~/Contexts/User';
@@ -34,7 +33,7 @@ const Footer = Styled.View`
 `;
 
 interface Props {
-    props: DrawerContentComponentProps<DrawerContentOptions>;
+    props: DrawerContentComponentProps,
 }
 
 const Drawer = ({props}: Props) => {
@@ -59,7 +58,7 @@ const Drawer = ({props}: Props) => {
             </Button>
             <Button>
                 <ButtonContainer>
-                    <Icon source={require('~/Assets/Images/ic_favorite_outline.png')} />
+                    <Icon source={require('~/Assets/Images/Tabs/ic_favorite_outline.png')} />
                     <Label>팔로워</Label>
                 </ButtonContainer>
             </Button>
@@ -69,7 +68,7 @@ const Drawer = ({props}: Props) => {
                         logout();
                     }}>
                     <ButtonContainer>
-                        <Icon source={require('~/Assets/Images/ic_profile_outline.png')} />
+                        <Icon source={require('~/Assets/Images/Tabs/ic_profile_outline.png')} />
                         <Label>로그아웃</Label>
                     </ButtonContainer>
                 </Button>

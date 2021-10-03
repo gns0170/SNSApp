@@ -1,9 +1,9 @@
 import React from "react";
 import { StatusBar } from "react-native";
 
-import Navigator from '~./Screens/Navigator';
-import {UserContextProvider} from '~/Context/User';
-import {RandomUserDataProvider} from '~/Context/RandomUserData';
+import Navigator from "~/Screens/Navigator";
+import { UserContextProvider } from "~/Contexts/User";
+import {RandomUserDataProvider} from "~/Contexts/RandomUserData"
 
 interface Props {}
 
